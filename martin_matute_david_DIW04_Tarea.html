@@ -1,0 +1,265 @@
+<!DOCTYPE html> <!-- SIN ESTO, NO RECONOCE html5-->
+<html lang="es">
+<style>
+    body {
+        
+    }
+
+    #global {
+        width: 100%;
+        margin: 0 auto 0 auto;
+        background-color: #cf0f0f;
+    }
+
+    #cabecera {
+        width: 920px;
+        height: auto;
+        overflow: auto;
+        padding: 20px 20px 5px 20px;
+        margin: 0 auto 0 auto;
+        background: linear-gradient(#3E9722 35%, #cae646 80%, rgb(224, 235, 205));
+        border-radius: 10px;
+    }
+
+    h1 {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #navegacion {
+        margin: 0 auto 0 auto;
+        float: right;
+
+    }
+
+    #navegacion nav {
+        display: inline-block;
+    }
+
+    #navegacion nav ul {
+        margin-bottom: 2px;
+    }
+
+    #navegacion nav ul li {
+        width: 100px;
+        text-align: center;
+        list-style-position: inside;
+        padding: 5px 2px 5px 2px;
+        margin: 1px;
+        border: 1px, solid black;
+        border-radius: 5px 5px 0px 0px;
+        display: inline-block;
+        background-color: rgb(217, 228, 228);
+    }
+
+    #navegacion nav ul li:hover {
+        background-color: #E58C24;
+    }
+
+    .content {
+        width: 920px;
+        margin: 0 auto 0 auto;
+        display: flow-root;
+        overflow: auto;
+    }
+
+    .column {
+        width: 100%;
+        float: left;
+        margin: 5px;
+    }
+
+    #leftColumn {
+        width: 220px;
+        float: left;
+        margin: 0 auto 0 auto;
+    }
+
+    #centralColumn {
+        width: 480px;
+        float: center;
+        margin: 0 auto 0 auto;
+        padding-left: 20px;
+    }
+
+    #rightColumn {
+        width: 180px;
+        float: right;
+        margin: 0 auto 0 auto;
+        padding-left: 20px;
+    }
+
+    .apartado {
+        background-color: #3C74E6;
+        color: white;
+        padding: 5px 5px 5px 5px;
+        float: center;
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .textArea {
+        padding: 10px;
+    }
+
+    .enlace {
+        text-decoration: underline #3E9722;
+        color: #3E9722;
+        cursor: pointer;
+    }
+
+    .enlace:hover {
+        text-decoration: underline #18460a;
+        color: #18460a;
+    }
+
+    #imagenFP{
+        width: 100px;
+        height: 100px;
+        display: inline;
+        align-items: top;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .anuncios1 {
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
+
+    #anuncio {
+        width: 100%;
+        height: auto;
+    }
+
+    #pie {
+        width: 960px;
+        margin: 0 auto 0 auto;
+        padding: 30px;
+        float: center;
+        text-align: center;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8" />
+    <title>David Martin DIW04</title>
+</head>
+
+<body>
+    <div id="global">
+        <div id="cabecera">
+            <h1>TodoFP</h1>
+            www.educacion.gob.es
+            <div id="navegacion">
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Información</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Alumnos</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="content">
+            <div id="leftColumn" class="column">
+                <div id="areaUsuarios">
+                    <span class="apartado">AREA DE USUARIOS</span>
+                    <div class="textArea">
+                        <label>ID de Usuario:</label><br />
+                        <input type="text"><br />
+                        <label>Contraseña:</label><br />
+                        <input type="text"><br /><br />
+                        <input type="button" value="Acceder"></input><br /><br />
+                        <a href="#" class="enlace">¿Olvidaste la contraseña?</a><br />
+                    </div>
+                </div>
+                <div id="unidadesTrabajo">
+                    <span class="apartado">UNIDADES DE TRABAJO</span>
+                    <div class="textArea">
+                        <label><b>DIW01, 2011</b></label><br />
+                        <a href="#" class="enlace">Planificación de interfaces...</a><br /><br />
+                        <label><b>DIW02, 2011</b></label><br />
+                        <a href="#" class="enlace">Accesibilidad en la web</a><br /><br />
+                        <label><b>DIW03, 2011</b></label><br />
+                        <a href="#" class="enlace">Utilidad en la web</a><br /><br />
+                        <label><b>DIW04, 2011</b></label><br />
+                        <a href="#" class="enlace">Hojas de estilos</a><br /><br />
+                        <label><b>DIW05, 2011</b></label><br />
+                        <a href="#" class="enlace">Contenidos multimedia en la web, imagenes...</a><br />
+                    </div>
+                </div>
+            </div>
+            <div id="centralColumn" class="column">
+                <div id="bienvenido">
+                    <span class="apartado">BIENVENIDO A TODOFP</span>
+                    <div class="textArea">
+                        <p><img id="imagenFP" src="https://images.all-free-download.com/images/graphiclarge/fp_79697.jpg">FP a distancia. Esta oferta está dirigida especialmente a aquellas personas que, por diferentes razones(no solo laborales), no pueden cursar en los centros educativos y el horario...
+                        Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno 
+                        Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno Texto de relleno
+                        <br /><br /><hr>
+                        Realizado por David Martín.  <a href="#" class="enlace">TodoFP</a> | <a href="#" class="enlace">Educación</a></p>
+                    
+                    </div>
+                </div>
+                <div id="hojasEstilos">
+                    <span class="apartado">DIW04. HOJAS DE ESTILOS</span>
+                    <div class="textArea">
+                        <pre>
+    <i>"Orden Edu Texto de relleno Texto de rellenoasdfaas
+    Texto de relleno Texto de relleno dadasdadsafasdfas
+    Texto de relleno Texto de relleno dsasdasasdasfasas
+    hjbijTexto de relleno Texto de rellenorvfefwfsfsfsd
+    Aplicacion Web."</i>
+
+Técnicas, procedimientos y actividades relacionadas:
+
+    1. Crear y vincular hojas de estilo
+    2. Crear y vincular hojas de estilos en cascada
+
+Conceptos soporte relacionados:
+
+    1. Estilos en línea basados en etiquetas y en clases
+    2. Hojas de estilos auditivas
+    3. Hojas de estilo para imprimir
+    4. Herramientas y test de verificación
+
+
+<hr>
+Realizado por David Martín.  <a href="#" class="enlace">DIW</a> | <a href="#" class="enlace">TodoFP</a>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div id="rightColumn" class="column">
+                <div id="webInteres">
+                    <span class="apartado">WEBS DE INTERÉS</span>
+                    <div class="textArea">
+                        <ul>
+                            <li class="enlace">TodoFP</li>
+                            <li class="enlace">FP online</li>
+                            <li class="enlace">Platega</li>
+                            <li class="enlace">IES San Clemente</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="anuncios1">
+                    <div class="textArea">
+                        <img id="anuncio"
+                            src="https://lh3.googleusercontent.com/proxy/EZ1zBQYgS1tXYMwtj_0b-AKuYMI1VnIYW_pCBZ5kJAyTRGheAhcRZ_HypYNPxiyodx7NvFvjWDr2oJybdG2tsqNrZEZ6-MOLEISvd4tFioxx3zASqwsFyenj42GRTmvnEUEuYfdwTP7I3w">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pie">
+            Diseñado por David Martín. Enero de 2021.
+        </div>
+    </div>
+
+</body>
+
+</html>
